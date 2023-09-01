@@ -1,0 +1,50 @@
+.container {
+margin-top: 5vh;
+max-width: 290px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 5vw;
+
+    &__p{
+    color: $green;
+    text-transform: uppercase;
+    font-family: $font-main;
+    font-size: 0.875rem;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        
+        &--h2 {
+        text-transform: uppercase; 
+        font-family: $font-title; 
+        font-size: 1.375rem;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+
+        }
+
+        &--p {
+           font-family: $font-main;
+           line-height: 1.67;
+           text-align: left;
+           color: $grey; 
+           padding-bottom: 7vh;
+
+        }
+    }
+   &__button {
+    font-family: $font-main;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    color: $green;
+    border: solid 2px $green;
+    max-width: 150px;
+    border-radius: 50%;
+    line-height: 2.25;
+    font-weight: 500;
+
+   } 
+}
