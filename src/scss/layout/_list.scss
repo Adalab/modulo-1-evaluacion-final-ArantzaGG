@@ -15,6 +15,10 @@
         font-size: 1.25rem;
         text-align: center;
         line-height: 1.5;
+        @media (min-width: 768px) {
+        
+            font-size: 1.75rem; 
+             }
     }
 
     &__wrapper{
@@ -24,7 +28,12 @@
         width: 100vw;
         justify-content: center;
         align-items: center;
-        
+        @media (min-width: 768px) {
+           
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 5vw;
+            
+             }
     }
 
     &__div {
@@ -32,7 +41,12 @@
         display: grid;
         justify-content: center;
         grid-gap: 1vh;
-        
+       
+        @media (min-width:768px) {
+            &:nth-child(4n) {
+                grid-column: 1/4;
+                }
+       } 
         &--img{
         height: 7.75rem;
         border-radius: 50%;
@@ -44,8 +58,9 @@
         font-size: 0.875rem;
         text-align: center;
         }
-    }
-    &__button {
+    
+
+        &--button {
         background-color: $green;
         color: white;
         padding: 10px;
@@ -53,10 +68,11 @@
         font-size: 1.25rem;
         border-radius: 1.5em;
         border: solid $green;
-        margin: 2vh;
         max-width: 200px;
+        margin-bottom: 8vh;
         
-        
-        
+    }   
+     
+    
     }
 }

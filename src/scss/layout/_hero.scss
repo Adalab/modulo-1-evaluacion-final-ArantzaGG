@@ -9,6 +9,11 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: -36.8px;
+@media (min-width: 768px) {
+    background-repeat: no-repeat;
+    background-position: 0; 
+     }
+
 
     
 &__h1 {
@@ -20,6 +25,12 @@ margin-top: -36.8px;
     text-align: center;
     padding-top: 25vh;
 
+    @media (min-width: 768px) {
+    padding-top: 35vh;  
+    font-size: 4.688rem; 
+    line-height: 6.25rem;
+     }
+
     }
 
 &__p {
@@ -28,13 +39,28 @@ margin-top: -36.8px;
     font-size: 1rem;
     text-align: center;
     margin: 40px;
-}    
+    
+    @media (min-width: 768px) {
+        font-size: 1.5rem; 
+        line-height: 28px;
+        max-width: 350px;
+         }
+    
+    }
+
 &__img {
     background-color: white;
-    padding: 0.8rem;
+    width: 30px;
+    height: 30px;
+    border: 10px solid white;
     border-radius: 50%;
-    flex-grow: 0;
+    
+    @media (min-width: 768px) {
+       width: 45px;
+       height: 45px; 
+         }
+    
 
-}
+    }
     
 }
