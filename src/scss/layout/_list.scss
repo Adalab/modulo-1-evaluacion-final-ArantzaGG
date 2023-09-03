@@ -1,11 +1,16 @@
 .list {
     background-color: $lowgreen;
+    padding-left: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5vh;
 
-    @media (min-width: 1200px) {
-        padding-left: 10vw;
-        }
+   
    
     &__p {
+        padding-left: 5vw;
+        margin-left: auto;
+        margin-right: auto;
         font-family: $font-title;
         color: #626262;
         font-size: 0.75rem;
@@ -25,7 +30,10 @@
         font-size: 1.25rem;
         text-align: center;
         line-height: 1.5;
-        
+        padding-left: 5vw;
+        margin-left: auto;
+        margin-right: auto;
+
         @media (min-width: 768px) {
             font-size: 1.75rem; 
             }
@@ -35,6 +43,9 @@
     }
 
     &__wrapper{
+        
+        margin-left: auto;
+        margin-right: auto;
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 5vh;
