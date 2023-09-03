@@ -12,6 +12,7 @@
         flex-direction: row;
         justify-content: space-around;
     }
+    
 
     &__img {
         background-color: white;
@@ -35,6 +36,7 @@
         @media (min-width:768px) {
             text-align: left;;
         }
+        
 
         &--link {
             color: white;
@@ -47,6 +49,7 @@
      
     &__copy {
         font-family: $font-main;
+        text-align: center;
         font-size: 0.875rem;
         line-height: 2.14;
         color: white;
