@@ -24,6 +24,8 @@ margin-top: -36.8px;
     font-size: 1.875rem;
     text-align: center;
     padding-top: 25vh;
+    animation: waviy 1s infinite;
+    animation-delay: 3s;
 
     @media (min-width: 768px) {
     padding-top: 35vh;  
@@ -32,6 +34,14 @@ margin-top: -36.8px;
     max-width: 700px;
      }
 
+     @keyframes waviy {
+        0%,40%,100% {
+          transform: translateY(0)
+        }
+        20% {
+          transform: translateY(-20px)
+        }
+        }
     }
 
 &__p {

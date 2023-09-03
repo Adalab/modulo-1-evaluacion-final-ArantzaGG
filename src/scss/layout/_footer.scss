@@ -7,6 +7,7 @@
     align-items: center;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    
 
     @media (min-width:768px) {
         flex-direction: row;
@@ -22,9 +23,23 @@
         position: absolute;
         left: 45vw;
         transform: translateY(-50%);
+        animation-duration: 3s;
+        animation-name: slidein;
 
         
     }
+
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          
+        }
+      
+        to {
+          margin-left: 0%;
+          
+        }
+      }
 
     &__list {
         list-style: none;
@@ -53,6 +68,7 @@
         font-size: 0.875rem;
         line-height: 2.14;
         color: white;
+        
         
         @media (min-width:768px) {
             order: -2;
