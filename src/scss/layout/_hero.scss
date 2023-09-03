@@ -1,6 +1,6 @@
 .hero {
 background-image: url("../images/cover (1).jpeg");
-background-position: -70%;
+background-position: 70%;
 width: 100vw;
 height: 100vh;
 background-size: cover;
@@ -9,10 +9,8 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: -36.8px;
-@media (min-width: 768px) {
-    background-repeat: no-repeat;
-    background-position: 70%; 
-     }
+ background-repeat: no-repeat;
+
 
 
     
