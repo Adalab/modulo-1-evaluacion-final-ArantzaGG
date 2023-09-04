@@ -24,6 +24,8 @@ margin-top: -36.8px;
     padding-top: 25vh;
     animation: waviy 1s infinite;
     animation-delay: 3s;
+    max-width: 250px;
+    
 
     @media (min-width: 768px) {
     padding-top: 35vh;  
@@ -48,6 +50,7 @@ margin-top: -36.8px;
     font-size: 1rem;
     text-align: center;
     margin: 40px;
+    max-width: 250px;
     
     @media (min-width: 768px) {
         font-size: 1.5rem; 
