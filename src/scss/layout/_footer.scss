@@ -1,96 +1,96 @@
-footer {
-    background-color: $grey;
 
-}
-.footer {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    margin-left: auto;
-    margin-right: auto;
-
-    
-    @media (min-width:768px) {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-
+.footer{
+   background-color: $grey;
+   
     &__scroll {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        
         &--a {
             transform: translateY(-50%);
+            margin-left: auto;
+            margin-right: auto;
+            animation-duration: 3s;
+            animation-name: slidein; 
+            
+            @keyframes slidein {
+                    from {
+                      margin-left: 100%;
+                      
+                    }
+                  
+                    to {
+                      margin-left: 0%;
+                      
+                    }
+                  }
+
+            &__img {
+                background-color: white;
+                border-radius: 50%;
+                padding: 10px;
+                box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);   
+            }
         }
     }
-    &__img {
-        background-color: white;
-        border-radius: 50%;
-        padding: 10px;
-        box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
-        //position: absolute;
-        //left: 50vw;
+
+    &__container {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
         margin-left: auto;
         margin-right: auto;
-        //transform: translateY(-50%);
-        animation-duration: 3s;
-        animation-name: slidein;
-
-        
-    }
-
-    @keyframes slidein {
-        from {
-          margin-left: 100%;
-          
-        }
-      
-        to {
-          margin-left: 0%;
-          
-        }
-      }
-
-    &__list {
-        list-style: none;
-        line-height: 1.88;
-        font-size: 1rem;
-        text-align: center;
-        padding-bottom: 5vh;
 
         @media (min-width:768px) {
-            text-align: left;
+        flex-direction: row;
+        justify-content: space-around;
         }
         
-
-        &--link {
-            color: white;
-            font-family: $font-main;
-            text-decoration: none;
-            text-transform: uppercase;
+        &--list {
+            list-style: none;
+            line-height: 1.88;
+            font-size: 1rem;
             text-align: center;
+            padding-bottom: 5vh;
+    
+            @media (min-width:768px) {
+                text-align: left;
+            }
+            &__link {
+                color: white;
+                font-family: $font-main;
+                text-decoration: none;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
         }
-    }    
-     
-    &__copy {
-        font-family: $font-main;
-        text-align: center;
-        font-size: 0.875rem;
-        line-height: 2.14;
-        color: white;
-        
-        
-        @media (min-width:768px) {
-            order: -2;
+
+        &--copy {
+            font-family: $font-main;
+            text-align: center;
+            font-size: 0.875rem;
+            line-height: 2.14;
+            color: white;
+            @media (min-width:768px) {
+                order: -2;
+            }
         }
     }
-
 }
+
+
+
+
+
+    
+
+    
+  
 
 
